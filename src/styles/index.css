@@ -1,0 +1,44 @@
+body {
+    z-index: 100;
+    background-image: url(../assets/bg.jpg);
+
+}
+
+.bg-init {
+    height: 100vh;
+    background-image: url(../assets/init.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    box-shadow: -1px 0px 39px -2px rgba(0, 0, 0, 0.75);
+
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(80px, auto);
+
+}
+
+.h1 {
+    grid-row: 4;
+    grid-column: 1;
+    text-align: center;
+    padding-top: 1.8vh;
+    transition: 800ms;
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+
+.h1:hover {
+    color: rgb(230, 226, 24);
+    transition: 800ms;
+}
+
+.button {
+    display: flex;
+    justify-content: space-evenly;
+}
