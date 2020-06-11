@@ -1,8 +1,14 @@
+html{
+
+    scroll-behavior: smooth;
+
+ }
+
 .bg {
     z-index: 100;
     background-image: url(../assets/bg.jpg);
     background-attachment: fixed;
-}
+ }
 
 .bg-init {
     height: 100vh;
