@@ -1,2 +1,2 @@
-# electron-project
+https://erickarita.github.io/school-site/
  
