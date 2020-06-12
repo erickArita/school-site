@@ -1,14 +1,14 @@
-html{
+html {
 
     scroll-behavior: smooth;
 
- }
+}
 
 .bg {
     z-index: 100;
     background-image: url(../assets/bg.jpg);
     background-attachment: fixed;
- }
+}
 
 .bg-init {
     height: 100vh;
@@ -74,6 +74,7 @@ html{
 
 /* efecto paralax */
 .parallax {
+
     background: fixed no-repeat 50% 50%;
     background-size: cover;
 
@@ -85,26 +86,59 @@ html{
 }
 
 /* modalidades */
-.modalidades {
+.bg-blanck {
+
     text-align: center;
     background-color: #fff;
+    margin-bottom: -1rem;
 
 }
 
 .card-btn {
+
     position: absolute;
     right: -1.9rem;
     top: 45%;
-    
+
 }
 
 .two-card {
 
     display: flex;
     justify-content: space-between;
-   
+
 }
-.two-card:nth-last-child(){
-    
+
+.two-card:nth-last-child() {
+
     line-height: 1rem;
+
+}
+
+/* galeria */
+.galeria {
+
+    height: 110vh;
+
+}
+
+/* indio */
+#india {
+    background-image: url(/assets/india.jpg);
+
+}
+
+#india2 {
+    position: static;
+    background-image: url();
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+.slider {
+    background-size: auto;
+    background-position: center;
+    height: 520px;
 }
