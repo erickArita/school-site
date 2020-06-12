@@ -142,8 +142,19 @@ html {
     background-position: center;
     height: 520px;
 }
-#map{
-    height: 500px;
-    width: 1000px;
+ 
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 502px;
+    width: 831px;
     margin: auto;
+    margin-left: 3rem;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 502px;
+    width: 1000px;
 }
