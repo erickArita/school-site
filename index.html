@@ -13,9 +13,9 @@
 </head>
 
 <body>
-    <div class="bg ">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+    <div id="scro" class="bg ">
+        <div id="navC" class="container fixed-top">
+            <nav id="nav" class="navbar navbar-expand-lg bg-light   ">
                 <a href="#"><img src="assets/logo.png" height="50px" alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -25,7 +25,7 @@
                 <a class="navbar-brand " href="#" style="margin-left: 1rem;">INSUCA</a>
 
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                    <ul class=" nav ">
+                    <ul id="ul" class=" nav ">
 
 
 
@@ -44,7 +44,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">MATRICULARME </a>
+                            <a class="nav-link" href="#matricula">MATRICULARME </a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -66,7 +66,7 @@
         </div>
 
 
-        <div id="inicio" class=" container mt-2 sombra parallax">
+        <div id="inicio" class=" container mt-2 sombra parallax mb-3">
 
             <div class=" bg-init ">
                 <div class="grid">
@@ -186,7 +186,7 @@
             <!-- galeria -->
             <div id="galeria" class=" pt-2  bg-blanck galeria ">
 
-                <h1>GALERÍA</h1>
+                <h2>GALERÍA</h2>
                 <div class="paginacion">
 
                     <nav>
@@ -295,7 +295,7 @@
                                 </ol>
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img  src="assets/india.jpg" class="d-block w-100 mt-5 slider" alt="indi">
+                                        <img src="assets/india.jpg" class="d-block w-100 mt-5 slider" alt="indi">
 
                                     </div>
                                     <div class="carousel-item">
@@ -327,22 +327,185 @@
                             </div>
                         </div>
 
-
-
                     </div>
                 </div>
 
             </div>
-            <div id="ubication" class="bg-blanck min-vh-100 parallax pb-5">
-                <h1>UBICACIÓN</h1>
-                <div id="map">
-                    <div class="mapouter">
-                        <div class="gmap_canvas"><iframe width="1000" height="502" id="gmap_canvas"
-                                src="https://maps.google.com/maps?q=instituto%20superacion%20cashapa&t=&z=17&ie=UTF8&iwloc=&output=embed"
-                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
-                        <style>
-                     
-                        </style>
+            <div id="ubication" class="bg-blanck mt-auto pb-5  ">
+                <h2>UBICACIÓN</h2>
+
+                <div class="mapouter">
+
+
+                    <iframe id="mapa"
+                        src="https://maps.google.com/maps?q=instituto%20superacion%20cashapa&t=&z=17&ie=UTF8&iwloc=&output=embed">
+                    </iframe>
+
+
+                </div>
+
+            </div>
+            <div id="matricula" class="matricula">
+
+                <div class="bg-blanck  parallax  p-1  ">
+                    <h2>MATRICULARME</h2>
+                    <form id="frm" class="frm ml-5 mt-4 mr-5 ">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail4">NOMBRES</label>
+                                <input required type="text" class="form-control" id="inputEmail4"
+                                    placeholder="ERICK MARLEY">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword4">APELLIDOS</label>
+                                <input required type="text" class="form-control" id="inputPassword4"
+                                    placeholder="ARITA ORELLANA">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputAddress">NÚMERO DE IDENTIDAD</label>
+                                <input type="text" class="form-control" id="inputAddress" maxlength="13" required
+                                    placeholder="ej: 0421200200897">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputState">LOCALIDAD</label>
+                                <input required id="inputPlace" class="form-control"
+                                    placeholder="Municipio,Aldea o Barrio">
+
+                            </div>
+
+                        </div>
+
+                        <div class="form-row">
+
+
+                            <div class="form-group col-md-2">
+                                <label for="inputZip">SEXO</label>
+                                <select required class="form-control">
+                                    <option selected>--SELECIONE--</option>
+                                    <option value="">MASCULINO</option>
+                                    <option value="">FEMENINO</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="telAlumno">NUMERO TELEFÓNICO DEL ALUMNO</label>
+                                <input required type="tel" id="telAlumno" class="form-control" maxlength="8">
+                            </div>
+                            <div class="form-group col-md-1">
+                                <label for="telAlumno">EDAD</label>
+                                <input required type="number" id="telAlumno" class="form-control" min="11" max="24">
+                            </div>
+                            <div class="form-group col-md-1">
+                                <label for="gradoAlumno">GRADO </label>
+                                <select required type="number" id="gradoAlumno" class="form-control">
+                                    <option value="1">7</option>
+                                    <option value="1">8</option>
+                                    <option value="1">9</option>
+                                    <option value="2">10</option>
+                                    <option value="3">11</option>
+                                    <option value="4">12</option>
+                                    <select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="telAlumno">MODALIDAD</label>
+                                <select type="number " id="modalidadAlumno" class="form-control">
+                                    <option value="">BÁSICA</option>
+                                    <option value="">AÑO DE FUNDAMENTO</option>
+                                    <option value="">BCH</option>
+                                    <option value="">BTPCF</option>
+                                    <option value="">BTPI</option>
+
+                                    <select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="">EMAIL</label>
+                                <input required type="email" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group form-row">
+                            <div class="form-group col-md-4">
+                                <label for="inputAddress2">NOMBRE DEL PADRE</label>
+                                <input required type="text" class="form-control" id="inputAddress2 "
+                                    placeholder="OSCAR ORLANDO ARITA AUXUME">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputCity">NÚMERO TELEFÓNICO DEL PADRE </label>
+                                <input required type="text" class="form-control" maxlength="8">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="favClassAlumno">INCLINACION A (opcional)</label>
+                                <select type="number " class="form-control">
+                                    <option value="">MATEMÁTICAS</option>
+                                    <option value="">LENGUA Y LITERATURA</option>
+                                    <option value="">ARTE (mucica,pintura,oratoria)</option>
+                                    <option value="">DEPORTE</option>
+                                    <option value="">INFORMÁTICA(software,hardaware)</option>
+
+                                    <select>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn ">SOLICITAR MATRÍCULA</button>
+                        <div id="alert"></div>
+                    </form>
+                </div>
+
+            </div>
+            <div class="bg-blanck  parallax  h-100 pt-5 ">
+                <h2>SOBRE NOSOTROS</h2>
+
+
+                <div class="card  mb-3 mt-3 shadow w-100" data-aos="fade-left">
+                    <div class="col-12 ">
+                        <div class="card-body  ">
+                            <h5 class="card-title">VISIÓN</h5>
+                            <p class="p-5">
+                                Ser una institución lider, con infraestructura y tecnología adecuada, fundamentada en
+                                valores, con un personal comprometido y actualizado implementando políticas y
+                                estrategias educativas con sistemas de monitoreo y evaluación, para ofrecer una
+                                educación de calidad, en un ambiente de armonía y seguridad involucrando la comunidad e
+                                instituciones locales, nacionales e internacionales.
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card  mb-3 mt-3 shadow w-100" data-aos="fade-right">
+                    <div class="col-12 ">
+                        <div class="card-body  ">
+                            <h5 class="card-title">MISIÓN </h5>
+                            <p class="p-5">
+                                Satisfacer las necesidades educativas de la población, ofreciendo a los ciudadanos una
+                                formación integral a tráves de un trabajo reflexivo, crítico, analítico, transformador y
+                                visionario haciendo buen uso de los recursos disponibles, para formar profesionales de
+                                alta calidad técnica y humana que contribuyan a mejor el nivel de vida del medio en que
+                                se desarrollen.
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card   mt-3 shadow w-100  pb-4" data-aos="fade-up">
+                    <div class="m" ></div>
+                    <div class="col-12 ">
+
+                        <div class="card-body  ">
+                            
+                            <h5 class="card-title">HISTORIA </h5>
+                            
+                                <p class="p-5">
+                                    El CEMG Supeación Cashapa empezó su ardua labor y compromiso educativo desde 1992,
+                                    siendo desde entonces "El colegio del pueblo" dicho título fue merecedor gracias al
+                                    trabajo que desarrollo el personal docente, padres de familia y alumnos que se
+                                    comprometieron a dar todo de su parte para el crecimiento del instituto.
+
+                                </p>
+                            
+                        </div>
+
                     </div>
                 </div>
             </div>
